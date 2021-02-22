@@ -13,4 +13,4 @@ Follow the default [Ionic Native instructions](https://ionicframework.com/docs/n
 
 # Usage
 
-See https://skaly.io/docs/ionic-native
+See [Skaly Ionic-Native Docs](https://skaly.io/docs/ionic-native/classes/_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html)

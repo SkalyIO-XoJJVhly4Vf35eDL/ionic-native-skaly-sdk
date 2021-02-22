@@ -4,6 +4,7 @@ node_modules/
 .tmp
 aot/
 scripts/ionic-native-bower
+docs/
 scripts/docs-json/*.json
 dist/
 src/@ionic-native/plugins/**/ngx
