@@ -1,0 +1,641 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SkalySDK | skaly-ionic-native</title>
+	<meta name="description" content="Documentation for skaly-ionic-native">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">skaly-ionic-native</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_src__ionic_native_plugins_skaly_sdk_index_.html">&quot;src/@ionic-native/plugins/skaly-sdk/index&quot;</a>
+				</li>
+				<li>
+					<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>
+				</li>
+			</ul>
+			<h1>Class SkalySDK</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>name</dt>
+						<dd><p>Skaly SDK</p>
+						</dd>
+						<dt>description</dt>
+						<dd><p>The Skaly SDK Ionic Native wrapper</p>
+						</dd>
+						<dt>usage</dt>
+						<dd><pre><code class="language-typescript"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;./ExploreContainer.css&#x27;</span>;
+<span class="hljs-keyword">import</span> { IonButton } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/react&#x27;</span>;
+<span class="hljs-keyword">import</span> { SkalySDK } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@skaly/ionic-native-skaly-sdk&quot;</span>
+<span class="hljs-keyword">interface</span> ContainerProps { }
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">startSkaly</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">await</span> SkalySDK.start(<span class="hljs-string">&quot;my_rootkey&quot;</span>) <span class="hljs-comment">// Is your dashboard root key</span>
+}
+
+<span class="hljs-keyword">const</span> ExploreContainer: React.FC&lt;ContainerProps&gt; = <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">IonButton</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;light&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{startSkaly}</span>&gt;</span>Start Skaly<span class="hljs-tag">&lt;/<span class="hljs-name">IonButton</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ExploreContainer;</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">IonicNativePlugin</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">SkalySDK</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#install" class="tsd-kind-icon">install</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#platforms" class="tsd-kind-icon">platforms</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#plugin" class="tsd-kind-icon">plugin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#pluginname" class="tsd-kind-icon">plugin<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#pluginref" class="tsd-kind-icon">plugin<wbr>Ref</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#repo" class="tsd-kind-icon">repo</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#addidentity" class="tsd-kind-icon">add<wbr>Identity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#addscale" class="tsd-kind-icon">add<wbr>Scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#allowaccesstodata" class="tsd-kind-icon">allow<wbr>Access<wbr>ToData</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#startreading" class="tsd-kind-icon">start<wbr>Reading</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getplugin" class="tsd-kind-icon">get<wbr>Plugin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getplugininstallname" class="tsd-kind-icon">get<wbr>Plugin<wbr>Install<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getpluginname" class="tsd-kind-icon">get<wbr>Plugin<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getpluginref" class="tsd-kind-icon">get<wbr>Plugin<wbr>Ref</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getsupportedplatforms" class="tsd-kind-icon">get<wbr>Supported<wbr>Platforms</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#installed" class="tsd-kind-icon">installed</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="install" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> install</h3>
+					<div class="tsd-signature tsd-kind-icon">install<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#install">install</a></p>
+						<ul>
+							<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="platforms" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> platforms</h3>
+					<div class="tsd-signature tsd-kind-icon">platforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#platforms">platforms</a></p>
+						<ul>
+							<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="plugin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> plugin</h3>
+					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#plugin">plugin</a></p>
+						<ul>
+							<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:4</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="pluginname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> plugin<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#pluginname">pluginName</a></p>
+						<ul>
+							<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:2</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="pluginref" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> plugin<wbr>Ref</h3>
+					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#pluginref">pluginRef</a></p>
+						<ul>
+							<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:3</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="repo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> repo</h3>
+					<div class="tsd-signature tsd-kind-icon">repo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#repo">repo</a></p>
+						<ul>
+							<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addidentity" class="tsd-anchor"></a>
+					<h3>add<wbr>Identity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Identity<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, birthday<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/@ionic-native/plugins/skaly-sdk/index.ts:79</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add user profile</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>handle: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the handle as to which the user is known</p>
+									</div>
+								</li>
+								<li>
+									<h5>sex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>biological gender of the user (0: male, 1: female)</p>
+									</div>
+								</li>
+								<li>
+									<h5>birthday: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>birthday of the user (javascript date object, required)</p>
+									</div>
+								</li>
+								<li>
+									<h5>length: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>length of the user (in CM)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a promise that resolves when something happens</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addscale" class="tsd-anchor"></a>
+					<h3>add<wbr>Scale</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Scale<span class="tsd-signature-symbol">(</span>supportedScales<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/@ionic-native/plugins/skaly-sdk/index.ts:65</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add scale</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>supportedScales: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Comma-separated string of what scales to support (empty string = all scales) (Example: &quot;withings,virtual_scale&quot;)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a promise that resolves when something happens</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="allowaccesstodata" class="tsd-anchor"></a>
+					<h3>allow<wbr>Access<wbr>ToData</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">allow<wbr>Access<wbr>ToData<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/@ionic-native/plugins/skaly-sdk/index.ts:101</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows consent for a given handle</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>to: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Allow to send data to this root key (most likely the same as the dashboard root key)</p>
+									</div>
+								</li>
+								<li>
+									<h5>handle: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Allow sending data for this user / handle</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A callback when the access is granted</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span>rootKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/@ionic-native/plugins/skaly-sdk/index.ts:54</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Start the SDK</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rootKey: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The root key to talk to the dashboard (or an app using the dashboard SDK)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a promise that resolves when something happens</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="startreading" class="tsd-anchor"></a>
+					<h3>start<wbr>Reading</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">start<wbr>Reading<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_src__ionic_native_plugins_skaly_sdk_index_.userscalereply.html" class="tsd-signature-type">UserScaleReply</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/@ionic-native/plugins/skaly-sdk/index.ts:89</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reads current user data</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_src__ionic_native_plugins_skaly_sdk_index_.userscalereply.html" class="tsd-signature-type">UserScaleReply</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A callback with scannedHandle (string) + the scale reply. Example: {scannedHandle: &quot;peter&quot;, scaleReply: {weight: &quot;75&quot;, timestamp:686790000}}</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="getplugin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Plugin</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugin<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getplugin">getPlugin</a></p>
+								<ul>
+									<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:16</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the original plugin object</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="getplugininstallname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Plugin<wbr>Install<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugin<wbr>Install<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getplugininstallname">getPluginInstallName</a></p>
+								<ul>
+									<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:28</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the plugin&#39;s install name</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="getpluginname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Plugin<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugin<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getpluginname">getPluginName</a></p>
+								<ul>
+									<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:20</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the plugin&#39;s name</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="getpluginref" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Plugin<wbr>Ref</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugin<wbr>Ref<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getpluginref">getPluginRef</a></p>
+								<ul>
+									<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:24</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the plugin&#39;s reference</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="getsupportedplatforms" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Supported<wbr>Platforms</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Supported<wbr>Platforms<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getsupportedplatforms">getSupportedPlatforms</a></p>
+								<ul>
+									<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:32</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the plugin&#39;s supported platforms</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="installed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> installed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">installed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html">SkalySDK</a>.<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#installed">installed</a></p>
+								<ul>
+									<li>Defined in dist/@ionic-native/core/ionic-native-plugin.d.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a boolean that indicates whether the plugin is installed</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_src__ionic_native_plugins_skaly_sdk_index_.html">&quot;src/@ionic-<wbr>native/plugins/skaly-<wbr>sdk/index&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html" class="tsd-kind-icon">SkalySDK</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#install" class="tsd-kind-icon">install</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#platforms" class="tsd-kind-icon">platforms</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#plugin" class="tsd-kind-icon">plugin</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#pluginname" class="tsd-kind-icon">plugin<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#pluginref" class="tsd-kind-icon">plugin<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#repo" class="tsd-kind-icon">repo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#addidentity" class="tsd-kind-icon">add<wbr>Identity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#addscale" class="tsd-kind-icon">add<wbr>Scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#allowaccesstodata" class="tsd-kind-icon">allow<wbr>Access<wbr>ToData</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#start" class="tsd-kind-icon">start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#startreading" class="tsd-kind-icon">start<wbr>Reading</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getplugin" class="tsd-kind-icon">get<wbr>Plugin</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getplugininstallname" class="tsd-kind-icon">get<wbr>Plugin<wbr>Install<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getpluginname" class="tsd-kind-icon">get<wbr>Plugin<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getpluginref" class="tsd-kind-icon">get<wbr>Plugin<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#getsupportedplatforms" class="tsd-kind-icon">get<wbr>Supported<wbr>Platforms</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src__ionic_native_plugins_skaly_sdk_index_.skalysdk.html#installed" class="tsd-kind-icon">installed</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_src__ionic_native_plugins_skaly_sdk_index_.scalereply.html" class="tsd-kind-icon">Scale<wbr>Reply</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_src__ionic_native_plugins_skaly_sdk_index_.userscalereply.html" class="tsd-kind-icon">User<wbr>Scale<wbr>Reply</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
