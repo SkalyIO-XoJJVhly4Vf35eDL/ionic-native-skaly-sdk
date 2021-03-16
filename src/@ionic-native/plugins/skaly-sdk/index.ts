@@ -56,6 +56,17 @@ export class SkalySDK extends IonicNativePlugin {
   }
 
   /**
+   * Add watch
+   *
+   * @param {string} supportedWatches Comma-separated string of what watches to support (empty string = all watches) (Example: "withings")
+   * @return {Promise<any>} Returns a promise that resolves when connection is succeeded
+   */
+   @Cordova()
+   addWatch(supportedWatches: string): Promise<any> {
+     return; // We add return; here to avoid any IDE / Compiler errors
+   }
+
+  /**
    * Add scale
    *
    * @param {string} supportedScales Comma-separated string of what scales to support (empty string = all scales) (Example: "withings,virtual_scale")
@@ -79,6 +90,16 @@ export class SkalySDK extends IonicNativePlugin {
   addIdentity(handle: string, sex: number, birthday: Date, length: number): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
+
+  /**
+   * Reads current user data
+   *
+   * @return {Promise<WatchReply>} A callback with an array of WatchReply objects in JSON.
+   */
+   @Cordova()
+   startReadingWatch(): Promise<WatchReply> {
+     return; // We add return; here to avoid any IDE / Compiler errors
+   }
 
   /**
    * Reads current user data
@@ -109,6 +130,16 @@ export class SkalySDK extends IonicNativePlugin {
 export interface UserScaleReply {
   scaleReply: ScaleReply;
   scannedHandle: string;
+}
+
+/**
+ * The response that will be recieved when a user wants to read their current watch data.
+ */
+ export interface WatchReply {
+  steps: number | null;
+  distance: string | null;
+  calories: string | null;
+  timestamp: number;
 }
 
 /**
