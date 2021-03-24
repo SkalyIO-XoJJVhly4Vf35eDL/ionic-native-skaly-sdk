@@ -56,6 +56,26 @@ export class SkalySDK extends IonicNativePlugin {
   }
 
   /**
+   * Check if user has a scale connected
+   *
+   * @returns A json object containing a boolean value at the key "hasScale". Example: {"hasScale": true}
+   */
+   @Cordova()
+   hasScale(): Promise<HasScaleReply> {
+     return; // We add return; here to avoid any IDE / Compiler errors
+   }
+
+  /**
+   * Check if user has a watch connected
+   *
+   * @returns A json object containing a boolean value at the key "hasWatch". Example: {"hasWatch": true}
+   */
+   @Cordova()
+   hasWatch(): Promise<HasWatchReply> {
+     return; // We add return; here to avoid any IDE / Compiler errors
+   }
+
+  /**
    * Add watch
    *
    * @param {string} supportedWatches Comma-separated string of what watches to support (empty string = all watches) (Example: "withings")
@@ -157,4 +177,18 @@ export interface ScaleReply {
   muscleQuality: string | null;
   boneMass: string | null;
   bodyWater: string | null;
+}
+
+/**
+ * The response that will be recieved when hasScale is called.
+ */
+export interface HasScaleReply {
+  hasScale: boolean;
+}
+
+/**
+ * The response that will be recieved when hasWatch is called.
+ */
+export interface HasWatchReply {
+  hasWatch: boolean;
 }
