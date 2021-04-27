@@ -1,6 +1,6 @@
 {
   "name": "skaly-ionic-native",
-  "version": "0.2.2",
+  "version": "0.3.5",
   "description": "Ionic Native plugin wrapper for Skaly SDK Cordova Plugin",
   "homepage": "https://skaly.io",
   "author": "Peter Willemsen <peter@skaly.io>",
@@ -23,6 +23,7 @@
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\""
   },
   "dependencies": {
+    "@ionic-native/core": "^5.31.1",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

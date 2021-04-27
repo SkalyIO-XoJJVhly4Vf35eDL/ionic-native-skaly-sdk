@@ -60,20 +60,20 @@ export class SkalySDK extends IonicNativePlugin {
    *
    * @returns A json object containing a boolean value at the key "hasScale". Example: {"hasScale": true}
    */
-   @Cordova()
-   hasScale(): Promise<HasScaleReply> {
-     return; // We add return; here to avoid any IDE / Compiler errors
-   }
+  @Cordova()
+  hasScale(): Promise<HasScaleReply> {
+    return; // We add return; here to avoid any IDE / Compiler errors
+  }
 
   /**
    * Check if user has a watch connected
    *
    * @returns A json object containing a boolean value at the key "hasWatch". Example: {"hasWatch": true}
    */
-   @Cordova()
-   hasWatch(): Promise<HasWatchReply> {
-     return; // We add return; here to avoid any IDE / Compiler errors
-   }
+  @Cordova()
+  hasWatch(): Promise<HasWatchReply> {
+    return; // We add return; here to avoid any IDE / Compiler errors
+  }
 
   /**
    * Add watch
@@ -81,10 +81,10 @@ export class SkalySDK extends IonicNativePlugin {
    * @param {string} supportedWatches Comma-separated string of what watches to support (empty string = all watches) (Example: "withings")
    * @return {Promise<any>} Returns a promise that resolves when connection is succeeded
    */
-   @Cordova()
-   addWatch(supportedWatches: string): Promise<any> {
-     return; // We add return; here to avoid any IDE / Compiler errors
-   }
+  @Cordova()
+  addWatch(supportedWatches: string): Promise<any> {
+    return; // We add return; here to avoid any IDE / Compiler errors
+  }
 
   /**
    * Add scale
@@ -114,12 +114,24 @@ export class SkalySDK extends IonicNativePlugin {
   /**
    * Reads current user data
    *
-   * @return {Promise<WatchReply>} A callback with an array of WatchReply objects in JSON.
+   * @return {Promise<Array<WatchReply>>} A callback with an array of WatchReply objects in JSON.
    */
-   @Cordova()
-   startReadingWatch(): Promise<WatchReply> {
-     return; // We add return; here to avoid any IDE / Compiler errors
-   }
+  @Cordova()
+  getWatchData(): Promise<Array<WatchReply>> {
+    return; // We add return; here to avoid any IDE / Compiler errors
+  }
+
+  /**
+   * Gets scale data for handle
+   *
+   * @param {string} handle the handle of which data to retrieve
+   * @param {number} uid retrieve all data after this uid (useful for retrieving large amounts of data)
+   * @return {Promise<GetScaleDataReply>} A callback with an array of ScaleReply objects in JSON + the last UID index.
+   */
+  @Cordova()
+  getScaleData(handle: string, uid: number): Promise<GetScaleDataReply> {
+    return; // We add return; here to avoid any IDE / Compiler errors
+  }
 
   /**
    * Reads current user data
@@ -155,7 +167,7 @@ export interface UserScaleReply {
 /**
  * The response that will be recieved when a user wants to read their current watch data.
  */
- export interface WatchReply {
+export interface WatchReply {
   steps: number | null;
   distance: string | null;
   calories: string | null;
@@ -191,4 +203,12 @@ export interface HasScaleReply {
  */
 export interface HasWatchReply {
   hasWatch: boolean;
+}
+
+/**
+ * The response that will be recieved when getScaleData is called.
+ */
+export interface GetScaleDataReply {
+  scaleReplies: Array<ScaleReply>;
+  lastUID: number;
 }
